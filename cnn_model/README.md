@@ -54,7 +54,7 @@ deterministic (especially on a GPU), so reruns can differ by about ±0.01 in the
    columns for every miRNA. A run of consecutive base pairs shows up as a diagonal in the
    grid.
 
-      <img src="pairing_matrix.png" width="550" alt="Pairing matrix example">
+      <img src="figures/pairing_matrix.png" width="550" alt="Pairing matrix example">
 
    *Toy example (8-nt miRNA, 10-nt target; the real grid is 50 × 26). The bound miRNA's
    8 consecutive base pairs (top) become one diagonal run in the grid (bottom).*
