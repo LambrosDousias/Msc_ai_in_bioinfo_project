@@ -1,5 +1,4 @@
 *.tsv
 *.gz
 *.pt
-*.png
 .ipynb_checkpoints/
