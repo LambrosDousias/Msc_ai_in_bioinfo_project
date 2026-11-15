@@ -53,6 +53,12 @@ deterministic (especially on a GPU), so reruns can differ by about ±0.01 in the
    miRNAs (17–26 nt) are padded on the 3' end, so the seed region stays in the same
    columns for every miRNA. A run of consecutive base pairs shows up as a diagonal in the
    grid.
+
+      <img src="pairing_matrix.png" width="550" alt="Pairing matrix example">
+
+   *Toy example (8-nt miRNA, 10-nt target; the real grid is 50 × 26). The bound miRNA's
+   8 consecutive base pairs (top) become one diagonal run in the grid (bottom).*
+
 3. **Model.** Three 3×3 convolution layers with a 2×2 max pool, then global max pooling,
    dropout 0.3 and a linear output layer (about 56k parameters). The convolutions detect
    diagonal pairing patterns up to about seed length, and global max pooling keeps each
